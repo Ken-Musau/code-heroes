@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title> Registration Form</title>
-    </head>
-    <body>
-        <h1> Group 7 Registration Form</h1>
-        <form action="" method="post">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="name">
-            <br><br>
-            <label for="name">Email</label>
-            <input type="email" id="email" placeholder="email">
-            <br><br>
-            <label for="name">Password</label>
-            <input type="password" id="password" placeholder="password" minlength="8">
-            <br><br>
-            <fieldset>
-                <legend>Referrer</legend>
-                <input type="radio" id="tv">
-                <label for="tv">tv</label>
-                <br>
-                <input type="radio" id="internet">
-                <label for="internet">internet</label>
-                <br>
-                <input type="radio" id="none" checked="">
-                <label for="none">none</label>
-                <br>
-              </fieldset>
-              <button>Register</button>
-        </form>
-        <input type="checkbox" id="checkbox" checked="">
-              <label for="checkbox">I accept the terms of service</label>
-              <br>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Group 7 Registration Form</h1>
+    <form action="" method="post">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" placeholder="name" /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" placeholder="email" /><br />
+
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="password"
+        minlength="8"
+      />
+
+      <fieldset>
+        <legend>Referrer</legend>
+
+        <input type="radio" id="tv" name="Referrer" value="tv" />
+        <label for="tv">tv</label>
+        <br />
+
+        <input type="radio" id="internet" name="Referrer" value="internet" />
+        <label for="internet">internet</label>
+        <br />
+
+        <input type="radio" id="none" checked="" name="Referrer" value="none" />
+        <label for="none">none</label>
+        <br />
+      </fieldset>
+      <input type="checkbox" id="terms" required name="" />
+      <label for="terms">I accept the terms of service</label><br /><br />
+      <input type="submit" value="Registar" />
+    </form>
+  </body>
 </html>
